@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Hoşgeldiniz'),
     );
   }
 }
@@ -41,17 +43,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.menu),
+        leading: const Icon(Icons.menu),
         title: Text(widget.title),
         actions: [
           IconButton(
-            icon: Icon(Icons.settings),
+            icon: const Icon(Icons.settings),
             onPressed: () {
               print('Settings');
             },
           ),
           IconButton(
-            icon: Icon(Icons.add),
+            icon: const Icon(Icons.add),
             onPressed: () {
               print('Add');
             },
@@ -74,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 print('denemeye basıldı');
                 _incrementCounter();
               },
-              child: Text('deneme'),
+              child: const Text('deneme'),
             ),
           ],
         ),
